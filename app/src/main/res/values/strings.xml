@@ -1,0 +1,17 @@
+
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Tracker</string>
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="category_log">Tracking Log</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="category_out_of_campus">Out of campus</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="category_idle">Idle</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="category_missing">Missing</string>
+</resources>

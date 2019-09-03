@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/list_item"
+    android:background="@color/tan_background">
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="horizontal"
+        android:id="@+id/text_background">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:id="@+id/name"
+                tools:location="Hello"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/white_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:id="@+id/location"
+                tools:location="Hello"
+                android:textSize="18sp"
+                android:textColor="@color/white_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/time"
+                android:gravity="center"
+                tools:location="March 2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/date"
+                android:gravity="center"
+                tools:location="March 2"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

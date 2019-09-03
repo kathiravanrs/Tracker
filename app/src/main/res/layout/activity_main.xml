@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    tools:context="com.kathi.project.tracker.MainActivity">
+
+    <!-- Numbers category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Tracking_log">
+        <TextView
+            android:id="@+id/tracking_log"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_log" />
+    </FrameLayout>
+
+    <!-- Family category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Idle">
+        <TextView
+            android:id="@+id/idle"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_idle" />
+    </FrameLayout>
+
+    <!-- Colors category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/out_of_campus">
+        <TextView
+            android:id="@+id/out_of_campus"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_out_of_campus" />
+    </FrameLayout>
+
+    <!-- Phrases category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/missing">
+        <TextView
+            android:id="@+id/missing"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_missing" />
+    </FrameLayout>
+</LinearLayout>
