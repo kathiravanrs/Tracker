@@ -68,13 +68,13 @@ public class TrackingLogActivity extends AppCompatActivity {
                 @Override
                 public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                     Log logMessage = dataSnapshot.getValue(Log.class);
-                    mLogAdapter.add(logMessage);
+                    mLogAdapter.insert(logMessage, 0);
                 }
 
                 @Override
                 public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                     Log logMessage = dataSnapshot.getValue(Log.class);
-                    mLogAdapter.add(logMessage);
+                    mLogAdapter.insert(logMessage, 0);
                 }
 
                 @Override

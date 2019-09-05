@@ -10,7 +10,7 @@
     <LinearLayout
         android:paddingLeft="16dp"
         android:layout_width="match_parent"
-        android:layout_height="88dp"
+        android:layout_height="100dp"
         android:orientation="horizontal"
         android:id="@+id/text_background">
 
@@ -26,8 +26,9 @@
                 android:gravity="bottom"
                 android:id="@+id/name"
                 tools:location="Hello"
+                android:textAllCaps="true"
                 android:textStyle="bold"
-                android:textSize="18sp"
+                android:textSize="24sp"
                 android:textColor="@color/white_text"/>
 
             <TextView
@@ -50,21 +51,23 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="24sp"
                 android:id="@+id/time"
-                android:gravity="center"
+                android:gravity="bottom"
                 tools:location="March 2"/>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="16sp"
                 android:id="@+id/date"
-                android:gravity="center"
+                android:gravity="top"
                 tools:location="March 2"/>
-
-
         </LinearLayout>
-
 
     </LinearLayout>
 

@@ -29,7 +29,7 @@ public class LogAdapter extends ArrayAdapter<Log> {
 
         Log message = getItem(position);
         nameView.setText(message.getName());
-        timeView.setText(message.getDate());
+        timeView.setText(message.getTime());
         locationView.setText(message.getLocation());
         dateView.setText(message.getDate());
         return convertView;
