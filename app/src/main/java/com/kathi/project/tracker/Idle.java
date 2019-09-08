@@ -45,6 +45,7 @@ public class Idle extends AppCompatActivity {
     ListView mListView;
     ChildEventListener mChildEventListener;
     NotificationManager notificationManager;
+    NotificationID id;
 
 
 
@@ -66,17 +67,12 @@ public class Idle extends AppCompatActivity {
         mLogAdapter = new LogAdapter(this, R.layout.list_item, logMessages);
         mListView.setAdapter(mLogAdapter);
         attachDatabaseReadListener();
-
-
         builder = new NotificationCompat.Builder(this, "CHANNEL_ID")
                 .setSmallIcon(R.drawable.x_icon)
-                .setContentTitle("Missing")
+                .setContentTitle("Idle for a long time")
                 .setPriority(NotificationCompat.PRIORITY_HIGH);
 
     }
-
-
-
 
     private void attachDatabaseReadListener(){
 
@@ -87,9 +83,7 @@ public class Idle extends AppCompatActivity {
                     Log logMessage = dataSnapshot.getValue(Log.class);
                     mLogAdapter.insert(logMessage, 0);
                     builder.setContentText("Name: " + logMessage.getName().toUpperCase());
-                    notificationManager.notify(2, builder.build());
-
-
+                    notificationManager.notify(id.getID(), builder.build());
                 }
 
                 @Override
@@ -130,7 +124,6 @@ public class Idle extends AppCompatActivity {
             notificationManager = getSystemService(NotificationManager.class);
             notificationManager.createNotificationChannel(channel);
         }
-
     }
 
 
